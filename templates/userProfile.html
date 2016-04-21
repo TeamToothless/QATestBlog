@@ -1,0 +1,22 @@
+<h2>Profile of user {{username}}</h2>
+<h4>Email: {{email}}</h4>
+<h2>Posts:</h2>
+{{#posts}}
+<div id="post">
+    <h2>
+        <a href="#posts/{{postId}}">{{title}}</a>
+    </h2>
+    <p><span class="glyphicon glyphicon-time"></span> Posted on {{postDate}}</p>
+    <hr>
+    <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+    <hr>
+    <p>{{description}}</p>
+    <a class="btn btn-primary" href="#posts/{{postId}}">Read More <span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+
+    {{#tags}}
+    <h5>{{name}}</h5>
+    {{/tags}}
+</div>
+<hr>
+{{/posts}}

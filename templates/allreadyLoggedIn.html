@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="css/userEditStyles.css">
+<div id="wrap">
+    <div id="regbar">
+        <div id="navthing">
+            <h2 id="margin-zero">
+                <a href="#/user/options" id="user-options-btn">Profile</a>
+                | <a href="#/" id="home-btn">Home</a>
+                | <a href="#/posts/add" id="add-popst">Add post</a>
+                | <a href="#/posts/all">All posts</a>
+            </h2>
+
+            <div class="user-options">
+                <div class="arrow-up"></div>
+                <div class="formholder">
+                    <div class="randompad">
+                        <fieldset id="main-user-panel">
+                            <img id="user-profile-pic" src="" alt="">
+                            <button id="user-control-edit-profile">Edit Profile</button>
+                            <button id="user-control-logout">Log out</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="user-edit">
+                <div class="arrow-right"></div>
+                <div class="formholder">
+                    <div class="randompad">
+                        <fieldset>
+                            <label name="password">Old Password</label>
+                            <input type="password" id="password-old-edit"/>
+                            <label name="password">New Password</label>
+                            <input type="password" id="password-new-edit"/>
+                            <label name="password-confirm">Confirm New Password</label>
+                            <input type="password" id="password-new-edit-confirm"/>
+                            <label name="email">New Email</label>
+                            <input type="email" id="email-new-edit"/>
+                            <label name="name" >New Full Name</label>
+                            <input type="text" id="fullname-new-edit" />
+                            <label name="name" >New Profile Picture</label>
+                            <input type="text" placeholder="URL..." id="user-profile-pic-new-edit" />
+                            <button id="save-changes-edit">Save Changes</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="scripts/userOptions/toggleUserOptions.js"></script>

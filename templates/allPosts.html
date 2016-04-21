@@ -1,0 +1,33 @@
+<label>Search posts by tags:</label>
+<select id="search-select">
+    {{#tags}}
+    <option value="{{name}}">{{name}}</option>
+    {{/tags}}
+</select>
+<button id="search-button">Search</button>
+<div id="allPostsDiv">
+    {{#posts}}
+    <!-- First Blog Post -->
+    <div class="post box">
+        <h2>
+            <a href="#/posts/{{postId}}" class="hvr-underline-from-center">{{title}}</a>
+        </h2>
+        <p class="lead">
+            by <a href="#/user/{{author._id}}" class="hvr-underline-from-center">{{author.username}}</a>
+        </p>
+        <p><span class="glyphicon glyphicon-time"></span> Posted on {{postDate}}</p>
+        <hr>
+        <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+        <hr>
+        <p>{{description}}</p>
+        <a class="btn btn-primary" href="#/posts/{{postId}}">Read More <span
+                class="glyphicon glyphicon-chevron-right"></span></a>
+
+        <!--TODO fix tag name displaying-->
+        {{#tags}}
+        <h5>{{name}}</h5>
+        {{/tags}}
+    </div>
+    {{/posts}}
+</div>
+

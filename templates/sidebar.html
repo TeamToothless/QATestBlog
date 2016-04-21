@@ -1,0 +1,29 @@
+<div class="well">
+    <h4>Latest posts</h4>
+    <ul>
+        {{#lastPosts}}
+        <li><a href="#/posts/{{_id}}">{{title}}</a></li>
+        {{/lastPosts}}
+    </ul>
+</div>
+
+<div class="well">
+    <h4>Tags</h4>
+        <ul class="list-unstyled">
+            {{#allTags}}
+            <li style="display: inline-block;"><a href="'#/postsByTagName/{{name}}">{{name}}</a></li>
+            {{/allTags}}
+        </ul>
+</div>
+
+<!-- Side Widget Well -->
+<div class="well">
+    <h4>Archive</h4>
+    <ul>
+        {{#archive}}
+        <li><a href="#">{{name}}</a>&nbsp;({{times}})</li>
+        {{/archive}}
+    </ul>
+</div>
+
+

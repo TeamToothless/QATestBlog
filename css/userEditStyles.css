@@ -1,0 +1,25 @@
+#user-profile-pic{
+    width:150px;
+    height:150px;
+    margin-bottom:10px;
+    border-radius: 50%;
+}
+.user-edit {
+    position: relative;
+    width: 350px;
+    display: none;
+    margin-top: 10px;
+    z-index:9;
+}
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #ECF0F1;
+    left: 10%;
+    position: absolute;
+    top: -10px;
+}
+
+
